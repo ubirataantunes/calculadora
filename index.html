@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <input type="text" id="input" value="0">
+        <div class="operators">
+            <button id="ac" onclick="clearTxt()">C</button>
+            <button id="sum" onclick="setOperator(this)">+</button>
+            <button id="sub" onclick="setOperator(this)">-</button>
+            <button id="div" onclick="setOperator(this)">/</button>
+            <button id="mult" onclick="setOperator(this)">*</button>
+        </div>
+        <div>
+            <ul class="num">
+                <li><button id="num9" onclick="writeNumber(this)">9</button></li>
+                <li><button id="num8" onclick="writeNumber(this)">8</button></li>
+                <li><button id="num7" onclick="writeNumber(this)">7</button></li>
+                <li><button id="num6" onclick="writeNumber(this)">6</button></li>
+                <li><button id="num5" onclick="writeNumber(this)">5</button></li>
+                <li><button id="num4" onclick="writeNumber(this)">4</button></li>
+                <li><button id="num3" onclick="writeNumber(this)">3</button></li>
+                <li><button id="num2" onclick="writeNumber(this)">2</button></li>
+                <li><button id="num1" onclick="writeNumber(this)">1</button></li>
+                <div class="last-line">
+                    <li><button id="num0" onclick="writeNumber(this)">0</button></li>
+                    <li><button id="point" onclick="dec(this, true)">.</button></li>
+                    <li><button id="B" onclick="clearCh()">B</button></li>
+                </div>  
+                <li><button id="equal" onclick="calculator()">=</button></li>
+            </ul>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>
